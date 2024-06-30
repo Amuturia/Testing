@@ -5,8 +5,11 @@ pipeline {
             steps {
                 sh 'npm install' 
             }
-            stage('Verify Node.js and npm') {
+        stage('Verify Node.js and npm') {
+            steps {
                 sh 'node -v && npm -v'
+            }
+                
             }
         }
     }
